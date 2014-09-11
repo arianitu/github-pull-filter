@@ -10,7 +10,6 @@ Filter out all PHP files:
     hgfilter
     - .*\.php
     
-    
 
 Filter out all libraries
 
@@ -24,3 +23,5 @@ Filter PHP files, a specific JS file and a library path
     - .*\.php
     - lib/support/.*
     - lib/myfile.js
+
+After specifiying a filter and creating a pull request. You must go to the files tab in your pull request and then hit the filter icon for the extension which is to the right of URL.
