@@ -1,14 +1,14 @@
 ### Description
 A chrome extension to filter out specific files in a pull request by specifying them in your pull request description.
 
-# Installation
+### Installation
 Download page: https://chrome.google.com/webstore/detail/ggfgobfcldmlkldcihgfigolpgcjflkc/
 
-# Example after installing
+### Example after installing
 
 Go to https://github.com/arianitu/github-pull-filter/pull/1/files and click the github-pull-filter extension button to the right of your URL.
 
-# Filtering
+### Filtering
 
 * You must have hgfilter and then an unordered list of regular expressions immediately following. (look at examples)
 * Filters are all specified via JavaScript Regular Expressions.
