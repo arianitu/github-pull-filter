@@ -10,7 +10,7 @@ Go to https://github.com/arianitu/github-pull-filter/pull/1/files and click the 
 
 ### Filtering
 
-* You must have hgfilter and then an unordered list of regular expressions immediately following. (look at examples)
+* You must have ghfilter and then an unordered list of regular expressions immediately following. (look at examples)
 * Filters are all specified via JavaScript Regular Expressions.
 
 
