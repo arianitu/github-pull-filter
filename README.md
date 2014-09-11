@@ -7,19 +7,19 @@ A chrome extension to filter out specific files in a pull request by specifying 
 
 Filter out all PHP files:
 
-    hgfilter
+    ghfilter
     - .*\.php
     
 
 Filter out all libraries
 
-    hgfilter
+    ghfilter
     - lib/support/.*
     
 
 Filter PHP files, a specific JS file and a library path
 
-    hgfilter
+    ghfilter
     - .*\.php
     - lib/support/.*
     - lib/myfile.js
