@@ -1,6 +1,6 @@
 {
 	"name": "Github Pull Filter ",
-	"version": "1.0",
+	"version": "1.1",
 	"manifest_version": 2,
 	"homepage_url": "https://github.com/arianitu/github-pull-filter",
 	"description": "Filter specific files in a pull request by specifying them in the description via RegEx.",
