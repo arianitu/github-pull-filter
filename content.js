@@ -43,7 +43,7 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
 
 	var fileContainers = document.querySelectorAll('#files .file');
 	for (var i = 0; i < fileContainers.length; ++i) {
-		bindToggler(fileContainers[i].querySelector('.meta .actions'),
+		bindToggler(fileContainers[i].querySelector('.file-actions'),
 		            fileContainers[i].querySelector('table.file-diff, .diff-table'), true);
 	}
 
@@ -99,10 +99,11 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
 			arrRegularExpresions.push(new RegExp(hgfilters.children[childIdx].innerHTML));
 		}
 
+		// div.file-info > span.js-selectable-text
 		var allCollapsedButtons = document.querySelectorAll(".diff-collapse-button");
 		for (var buttonIdx = 0; buttonIdx < allCollapsedButtons.length; buttonIdx++) {
 			var button = allCollapsedButtons[buttonIdx];
-			var fileName = button.parentNode.parentNode.parentNode.children[0].children[1].innerHTML;
+			var fileName = button.parentNode.parentNode.parentNode.querySelector("div.file-info > span.js-selectable-text").innerHTML;
 			fileName = fileName.trim();
 
 			var shouldCollapse = false;
