@@ -103,7 +103,7 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
 		var allCollapsedButtons = document.querySelectorAll(".diff-collapse-button");
 		for (var buttonIdx = 0; buttonIdx < allCollapsedButtons.length; buttonIdx++) {
 			var button = allCollapsedButtons[buttonIdx];
-			var fileName = button.parentNode.parentNode.parentNode.querySelector("div.file-info > span.js-selectable-text").innerHTML;
+			var fileName = button.parentNode.parentNode.parentNode.querySelector("div.file-info > span.user-select-contain").innerHTML;
 			fileName = fileName.trim();
 
 			var shouldCollapse = false;
@@ -113,6 +113,7 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
 					break;
 				}
 			}
+
 			if (shouldCollapse) {
 				button.click();
 			}
